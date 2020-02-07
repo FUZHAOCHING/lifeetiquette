@@ -1,0 +1,605 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body * {font-family: Microsoft JhengHei!important;} /*微軟正黑體*/
+nav{
+background-color: rgba(99, 99, 99, 0.51);
+padding: 15px;
+position: fixed;
+width: 100%;
+}
+li.list{
+float:right;
+font-size:22px;
+list-style-type: none;
+padding: 19px;
+position: relative;
+right: 15%;
+}
+.list a{
+text-decoration: none;
+color:white;
+font-weight:bold;
+
+}
+.list a:hover{
+text-decoration: none;
+color:#f3ca84;
+font-weight:bold;
+
+}
+.banner1 {
+	background: url(image/banner1.jpg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-position-y: center;
+}
+.logo{
+	position: absolute;
+    top: 0;
+    left: 15%;
+    z-index:0;
+}
+.contactus {
+	width: 50%;
+    display: inline-block;
+}
+.contact1{
+	background: url(image/contact-button2.png);
+    z-index:0;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+
+}
+.context1{
+   font-weight: bold;
+   font-size:2.5vw;
+   margin-left: 100px;
+}
+.context2{
+    font-weight: bold;
+    font-size: 2.5vw;
+    color:red;
+    margin-left: 100px;
+}
+.contact2{
+	background-color: rgba(99, 99, 99, 0.51);
+	margin-left: 10px;
+	display: inline-block;
+	padding: 35px;
+}
+.slogn1{
+	color:white;
+	font-size:2.5vw;
+	font-weight: bold;
+}
+.slogn2{
+	color:white;
+	font-size:20px;
+	font-weight: bold;
+}
+.lifeslogn {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.lifetext{
+	font-weight: bold;
+    font-size: 2vw;
+    color:gray;
+}
+.advantage-bg{
+	background: url(image/advantage-bg.jpg);
+	width: 100%;
+    background-repeat:no-repeat;
+   /* background-size:cover;*/
+    background-position:50%;
+}
+.row{
+	display: flex;
+}
+.bgtext1 {
+    display: inline-block;
+    width: calc(100% / 3);
+    padding: 3.3%;
+}
+.bgtext1a{
+	color:#00b4d4;
+	font-size: 2.2vw;
+	font-weight: bold;
+}
+.bgtext1b{
+	color:white;
+	font-size: 1.5vw;
+	font-weight: bold;
+	vertical-align: top;
+}
+.bgtext1-2{
+	color:#f3ca84;
+	font-weight: bold;
+	font-size:3vw;
+}
+.bgtext1-3{
+	color:white;
+	font-weight: bold;
+	font-size:1.5vw;
+}
+.lifetitle {
+    font-weight: bold;
+    font-size: 2.65vw;
+    color:black;
+    padding-bottom: 10px;
+}
+hr{
+	width: 4.5%;
+    border-top: 1.8px solid #f3ca84;
+}
+.ourservice {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: row;
+    height:50%;
+}
+.service1{
+	background: url(image/funeral-service.jpg);
+	/*height: 58%;*/
+	width: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    box-shadow: rgba(0,0,0,0.45) 0px 0px 0px 2000px inset;
+    transition: all 0.8s ease-in-out;
+}
+.service2{
+	background: url(image/pet-funeral-service.jpg);
+	/*height: 58%;*/
+	width: 50%;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    box-shadow: rgba(0,0,0,0.45) 0px 0px 0px 2000px inset;
+    transition: all 0.8s ease-in-out;
+}
+.service{
+	font-weight: bold;
+    font-size: 3.2vw;
+    color:white;
+    text-align: center; 
+}
+.eng-service{
+	font-weight: bold;
+    font-size:2vw;
+    color:white;
+    text-align: center;
+}
+.button{
+ 
+    color:white;
+    text-align: center;
+}
+.button a{
+    font-size:1.875vw;
+    color:white;
+    border:3px white solid;
+    text-decoration: none;
+    padding: 0.3vw;
+}
+.ourservice .service1:hover{
+	box-shadow: rgba(0,0,0,0) 0px 0px 0px 2000px inset;
+	width:70%;
+}
+.ourservice .service2:hover{
+	box-shadow: rgba(0,0,0,0) 0px 0px 0px 2000px inset;
+	width:70%;
+}
+.process{
+	display: flex;
+    justify-content: center;
+}
+.choose1{
+    padding: 15px;
+    font-size: 0.85vw;
+    background-color: #8080802e;
+    border-radius: 10%;
+}
+.choose1bg{
+	background: url(image/step-east-bg-ver2.jpg);
+	height:100%;
+	/*display: flex;
+	justify-content: space-around;
+	align-items: center;*/
+}
+
+.abcd {
+padding: 0 60px;
+}
+.choose1-1{
+	background: url(image/east1-1.png);
+	height: 36%;
+    /*width: 50%;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+.choose1-1:hover{
+	background: url(image/east2-1.png);
+	height: 36%;
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+
+.choosetext1-1{
+	font-weight: bold;
+    font-size:2vw;
+    color:white;
+}
+
+.abcd2 {
+padding: 0 60px;
+}
+.choose1-2{
+	background: url(image/east1-2.png);
+	height: 36%;
+    /*width: 50%;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+.choose1-2:hover{
+	background: url(image/east2-2.png);
+	height: 36%;
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+
+.choosetext1-2{
+	font-weight: bold;
+    font-size:2vw;
+    color:white;
+
+}
+.abcd3 {
+padding: 0 60px;
+}
+.choose1-3{
+	background: url(image/east1-3.png);
+	height: 36%;
+    /*width: 50%;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+.choose1-3:hover{
+	background: url(image/east2-3.png);
+	height: 36%;
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+
+}
+
+.choosetext1-3{
+	font-weight: bold;
+    font-size:2vw;
+    color:white;
+
+}
+.abcd4 {
+padding: 0 60px;
+}
+.choose1-4{
+	background: url(image/east1-4.png);
+	height: 36%;
+    /*width: 50%;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+.choose1-4:hover{
+	background: url(image/east2-4.png);
+	height: 36%;
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+
+}
+
+.choosetext1-4{
+	font-weight: bold;
+    font-size:2vw;
+    color:white;
+}
+.totalchoose {
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose1-5{
+	background: url(image/east1-5.png);
+	height: 36%;
+    /*width: 50%;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+.choose1-5:hover{
+	background: url(image/east2-5.png);
+	height: 36%;
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+
+}
+.choose1-6{
+	background: url(image/east1-6.png);
+	height: 36%;
+    /*width: 50%;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+.choose1-6:hover{
+	background: url(image/east2-6.png);
+	height: 36%;
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+
+}
+.choose1-7{
+	background: url(image/east1-7.png);
+	height: 36%;
+    /*width: 50%;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+.choose1-7:hover{
+	background: url(image/east2-7.png);
+	height: 36%;
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+
+}
+.choose1-8{
+	background: url(image/east1-8.png);
+	height: 36%;
+    /*width: 50%;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+.choose1-8:hover{
+	background: url(image/east2-8.png);
+	height: 36%;
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+
+}
+
+
+
+.choose2{
+    padding: 15px;
+    font-size: 0.85vw;
+    background-color: #8080802e;
+    border-radius: 10%;
+}
+.choose3{
+    padding: 15px;
+    font-size: 0.85vw;
+    background-color: #8080802e;
+    border-radius: 10%;
+}
+
+/*ul.choosestyle {
+    display: flex;
+    justify-content: center;
+}
+li.choose {
+    padding: 15px;
+    font-size: 0.85vw;
+    background-color: #8080802e;
+    border-radius: 10%;
+}
+li.choose a{
+	text-decoration: none;
+	color: black;
+
+/*<div class="changepro">
+	  <ul class="choosestyle">
+      <li class="choose"><a href="#">中式流程</a></li>
+      <li class="choose"><a href="#">西式流程</a></li>
+      <li class="choose"><a href="#">寵物流程</a></li>
+ 	</ul>
+</div>
+
+}*/
+
+.ctabg{
+	background: url(image/cta-bg.jpg);
+	height: 50%;
+    background-repeat: no-repeat;
+}
+.ctabg-a {
+    padding: 100px 175px;
+}
+.ctaslogn1{
+    font-size:2.4vw;	
+    color:white;
+    font-weight: bold;
+}
+
+.ctaslogn2{
+    font-size:4.16vw;
+    color: #f3ca84;
+    font-weight: bold;
+    vertical-align:middle;	
+}
+.ctabg-b {
+    text-align:right;
+    padding-right: 200px;
+}
+.ctaslognb1{
+	font-size:2.4vw;	
+    color:white;
+    font-weight: bold;
+}
+.ctaslognb2{
+    font-size:4.16vw;
+    color: #f3ca84;
+    font-weight: bold;
+    vertical-align:top;	
+}
+.footer {
+    height: 32%;
+    background-color:#3d4045 ;
+    display: flex;
+    justify-content: space-around;
+}
+.f1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.f2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.f3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.f-address{
+	background: url(image/placeholder-for-map.png);
+    height: 15%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    margin-bottom: 25px;
+}
+.f-phone{
+	background: url(image/phone-receiver.png);
+    height: 15%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    margin-bottom: 25px;
+}
+.f-email{
+	background: url(image/envelope.png);
+    height: 15%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    margin-bottom: 25px;
+}
+.finformation{
+	font-size: 1.3vw;
+    font-weight: bold;
+    color: #f3ca84;
+}
+.footer2{
+	    background-color:#3d4045 ;
+	    height: 4%;
+	    display: flex;
+}
+.footer-link{
+	font-size: 15px;
+	color:white;
+	padding-left: 20px;
+}
+nav.footerus{
+	margin:0;
+}
+li.list1{
+	float: right;
+    font-size: 14px;
+    list-style-type: none;
+    padding: 10px;
+    position: relative;
+    right: 5%;
+}
+.list1 a{
+text-decoration: none;
+color:white;
+font-weight:bold;
+
+}
+ul.liststyle1 {
+    display: inline-block;
+    width: 50%;
+}
+.footerlogo {
+    display: inline-block;
+    width: 50%;
+    padding-top: 10px;
+}
